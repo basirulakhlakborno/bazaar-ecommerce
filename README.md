@@ -59,6 +59,41 @@ The production-ready files will be in the `dist` directory.
 npm run preview
 ```
 
+## 🚀 Deployment
+
+### GitHub Pages
+
+This project is automatically deployed to GitHub Pages using GitHub Actions. The site will be available at:
+
+**https://basirulakhlakborno.github.io/bazaar-ecommerce/**
+
+#### Automatic Deployment
+
+Every time you push to the `main` branch, GitHub Actions will automatically:
+1. Build the project
+2. Deploy it to GitHub Pages
+
+#### Manual Deployment Setup
+
+If you need to set up GitHub Pages manually:
+
+1. Go to your repository settings on GitHub
+2. Navigate to **Pages** in the left sidebar
+3. Under **Source**, select:
+   - **Source**: `GitHub Actions`
+4. The workflow will automatically deploy on the next push to `main`
+
+#### Local Testing
+
+To test the production build locally with the correct base path:
+
+```bash
+npm run build
+npm run preview
+```
+
+Then visit `http://localhost:4173/bazaar-ecommerce/`
+
 ## 🏗️ Project Structure
 
 ```
