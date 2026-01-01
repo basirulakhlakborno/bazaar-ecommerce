@@ -1,0 +1,22 @@
+.app {
+  min-height: 100vh;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+
+  &.app-loading {
+    opacity: 0;
+  }
+
+  &:not(.app-loading) {
+    opacity: 1;
+  }
+
+  @media (max-width: 768px) {
+    padding-bottom: 80px;
+  }
+}
+
+

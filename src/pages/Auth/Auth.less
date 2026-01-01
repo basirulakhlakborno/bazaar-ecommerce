@@ -1,0 +1,333 @@
+.auth-page {
+  min-height: 100vh;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  position: relative;
+
+  .auth-back-button {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background: none;
+    border: none;
+    color: #1a1a1a;
+    cursor: pointer;
+    padding: 0.5rem 0.75rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-family: 'Mulish', 'Work Sans', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 500;
+
+    svg {
+      width: 20px;
+      height: 20px;
+      stroke-width: 2.5;
+      flex-shrink: 0;
+    }
+
+    span {
+      white-space: nowrap;
+    }
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.05);
+    }
+
+    &:active {
+      transform: scale(0.95);
+    }
+
+    @media (max-width: 768px) {
+      top: 0.75rem;
+      left: 0.75rem;
+      padding: 0.4rem 0.6rem;
+      font-size: 0.9rem;
+      gap: 0.4rem;
+
+      svg {
+        width: 18px;
+        height: 18px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      top: 0.5rem;
+      left: 0.5rem;
+      padding: 0.35rem 0.5rem;
+      font-size: 0.85rem;
+      gap: 0.35rem;
+
+      svg {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+
+  .auth-container {
+    width: 100%;
+    max-width: 450px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 3rem 2.5rem;
+    position: relative;
+
+    @media (max-width: 768px) {
+      padding: 2.5rem 2rem;
+      border-radius: 12px;
+    }
+
+    @media (max-width: 480px) {
+      padding: 2rem 1.5rem;
+    }
+  }
+
+  .auth-logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+
+    .auth-logo-img {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+
+      @media (max-width: 480px) {
+        width: 70px;
+        height: 70px;
+      }
+    }
+  }
+
+  .auth-tabs {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    background-color: #f5f5f5;
+    padding: 0.25rem;
+    border-radius: 12px;
+
+    .auth-tab {
+      flex: 1;
+      padding: 0.875rem 1.5rem;
+      border: none;
+      background: transparent;
+      border-radius: 8px;
+      font-family: 'Mulish', 'Work Sans', sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #666;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &.active {
+        background-color: #ffffff;
+        color: #1a1a1a;
+      }
+
+      &:hover:not(.active) {
+        color: #1a1a1a;
+      }
+
+      @media (max-width: 480px) {
+        padding: 0.75rem 1rem;
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+  .auth-google-button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 0.875rem 1.5rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #fafafa;
+    color: #1a1a1a;
+    font-family: 'Mulish', 'Work Sans', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 1.5rem;
+
+    &:hover {
+      background-color: #fafafa;
+      transform: translateY(-1px);
+    }
+
+    &:active {
+      transform: translateY(0);
+    }
+
+    .google-icon {
+      flex-shrink: 0;
+    }
+
+    span {
+      flex: 1;
+      text-align: center;
+    }
+  }
+
+  .auth-divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 1.5rem 0;
+    color: #8e8e93;
+    font-family: 'Nunito Sans', 'Work Sans', sans-serif;
+    font-size: 0.9rem;
+
+    &::before,
+    &::after {
+      content: '';
+      flex: 1;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    span {
+      padding: 0 1rem;
+    }
+  }
+
+  .auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    .auth-field {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      label {
+        font-family: 'Mulish', 'Work Sans', sans-serif;
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: #1a1a1a;
+      }
+
+      input {
+        padding: 0.875rem 1.25rem;
+        border: none;
+        border-radius: 10px;
+        font-family: 'Nunito Sans', 'Work Sans', sans-serif;
+        font-size: 0.95rem;
+        color: #1a1a1a;
+        background-color: #fafafa;
+        transition: all 0.3s ease;
+        outline: none;
+
+        &:focus {
+          background-color: #ffffff;
+        }
+
+        &::placeholder {
+          color: #8e8e93;
+        }
+      }
+    }
+
+    .auth-options {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: -0.5rem;
+
+      .auth-checkbox {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-family: 'Nunito Sans', 'Work Sans', sans-serif;
+        font-size: 0.9rem;
+        color: #666;
+        cursor: pointer;
+
+        input[type="checkbox"] {
+          width: 18px;
+          height: 18px;
+          cursor: pointer;
+          accent-color: #ff6b35;
+        }
+      }
+
+      .auth-link {
+        font-family: 'Nunito Sans', 'Work Sans', sans-serif;
+        font-size: 0.9rem;
+        color: #ff6b35;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: #e55a2b;
+        }
+      }
+    }
+
+    .auth-submit {
+      margin-top: 0.5rem;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 10px;
+      background-color: #ff6b35;
+      color: #ffffff;
+      font-family: 'Mulish', 'Work Sans', sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: #e55a2b;
+      }
+
+      &:active {
+        transform: scale(0.98);
+      }
+    }
+  }
+
+  .auth-footer {
+    margin-top: 2rem;
+    text-align: center;
+
+    p {
+      font-family: 'Nunito Sans', 'Work Sans', sans-serif;
+      font-size: 0.9rem;
+      color: #666;
+      margin: 0;
+    }
+
+    .auth-link-button {
+      background: none;
+      border: none;
+      color: #ff6b35;
+      font-family: 'Nunito Sans', 'Work Sans', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: underline;
+      padding: 0;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #e55a2b;
+      }
+    }
+  }
+}
+
