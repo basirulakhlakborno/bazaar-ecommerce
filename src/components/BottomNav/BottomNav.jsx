@@ -13,7 +13,7 @@ function BottomNav() {
       </a>
       <a href="#" className="bottom-nav-item bottom-nav-item-center">
         <img 
-          src="/logo-small.svg" 
+          src={`${import.meta.env.BASE_URL}logo-small.svg`} 
           alt="Home" 
           className="bottom-nav-home-icon" 
         />

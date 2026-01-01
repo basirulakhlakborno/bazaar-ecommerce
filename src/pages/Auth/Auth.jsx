@@ -28,7 +28,7 @@ function Auth() {
           <span>back</span>
         </button>
         <div className="auth-logo">
-          <img src="/logo.svg" alt="Bazaar E-Commerce Logo" className="auth-logo-img" />
+          <img src={`${import.meta.env.BASE_URL}logo.svg`} alt="Bazaar E-Commerce Logo" className="auth-logo-img" />
         </div>
 
         <div className="auth-tabs">

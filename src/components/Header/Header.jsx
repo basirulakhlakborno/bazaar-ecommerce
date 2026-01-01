@@ -54,7 +54,7 @@ function Header() {
             </span>
           </button>
         <Link to="/" className="logo">
-          <img src="/logo.svg" alt="Bazaar E-Commerce Logo" className="logo-img" />
+          <img src={`${import.meta.env.BASE_URL}logo.svg`} alt="Bazaar E-Commerce Logo" className="logo-img" />
         </Link>
         <button 
           className="mobile-search-toggle"

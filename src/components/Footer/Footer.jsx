@@ -7,7 +7,7 @@ function Footer() {
       <div className="footer-container">
         <div className="footer-section">
           <div className="footer-logo">
-            <img src="/logo.svg" alt="Bazaar E-Commerce Logo" className="footer-logo-img" />
+            <img src={`${import.meta.env.BASE_URL}logo.svg`} alt="Bazaar E-Commerce Logo" className="footer-logo-img" />
           </div>
           <p className="footer-text">
             Your trusted platform for shopping online.
