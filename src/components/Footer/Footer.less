@@ -107,6 +107,30 @@
         line-height: 1.5;
       }
     }
+
+    .footer-credits {
+      margin-top: 0.5rem;
+      color: #999;
+      font-size: 0.85rem;
+      font-family: 'Nunito Sans', 'Work Sans', sans-serif;
+
+      @media (max-width: 480px) {
+        font-size: 0.8rem;
+        margin-top: 0.75rem;
+      }
+
+      .footer-credit-link {
+        color: #ff6b35;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: #e55a2b;
+          text-decoration: underline;
+        }
+      }
+    }
   }
 
   @media (max-width: 768px) {

@@ -32,6 +32,9 @@ function Footer() {
       </div>
       <div className="footer-bottom">
         <p>&copy; {new Date().getFullYear()} Bazaar E-Commerce. All rights reserved.</p>
+        <p className="footer-credits">
+          Made by <a href="https://basirulakhlak.tech/" target="_blank" rel="noopener noreferrer" className="footer-credit-link">Basirul Akhlak Borno</a>
+        </p>
       </div>
     </footer>
   )

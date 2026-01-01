@@ -188,4 +188,11 @@ For questions or support, please open an issue in the GitHub repository.
 
 ---
 
+## 👨‍💻 Made By
+
+**Basirul Akhlak Borno**
+
+- 🌐 Website: [basirulakhlak.tech](https://basirulakhlak.tech/)
+- 💻 GitHub: [@basirulakhlakborno](https://github.com/basirulakhlakborno)
+
 Made with ❤️ using React and Vite
