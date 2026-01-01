@@ -80,8 +80,17 @@ If you need to set up GitHub Pages manually:
 1. Go to your repository settings on GitHub
 2. Navigate to **Pages** in the left sidebar
 3. Under **Source**, select:
-   - **Source**: `GitHub Actions`
-4. The workflow will automatically deploy on the next push to `main`
+   - **Source**: `Deploy from a branch`
+   - **Branch**: `gh-pages` / `/ (root)`
+4. **Important**: Do NOT set a custom domain - use GitHub's default domain
+5. The workflow will automatically deploy on the next push to `main`
+
+#### Domain Configuration
+
+This project is configured to use GitHub's default domain:
+- **Production URL**: `https://basirulakhlakborno.github.io/bazaar-ecommerce/`
+- All paths are configured for the `/bazaar-ecommerce/` subdirectory
+- Do not configure a custom domain as it will cause path issues
 
 #### Local Testing
 

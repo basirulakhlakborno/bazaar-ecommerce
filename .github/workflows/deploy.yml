@@ -38,4 +38,5 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
           cname: false
+          # Using GitHub's default domain: basirulakhlakborno.github.io/bazaar-ecommerce/
 
